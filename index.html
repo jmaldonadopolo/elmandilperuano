@@ -15,7 +15,9 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center mt-5">
+    <div class="container text-center mt-5">
+        <h1 class="text-white">Página web en construcción</h1>
+        <br>
         <img class="img-fluid logo-home" src="../images/logo.jpeg" alt="">
     </div>
 
@@ -30,6 +32,42 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script>
+            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?53256';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var options = {
+          "enabled":true,
+          "chatButtonSetting":{
+              "backgroundColor":"#4dc247",
+              "ctaText":"",
+              "borderRadius":"25",
+              "marginLeft":"0",
+              "marginBottom":"50",
+              "marginRight":"50",
+              "position":"right"
+          },
+          "brandSetting":{
+              "brandName":"El Mandil Peruano",
+              "brandSubTitle":"",
+              "brandImg":"https://scontent.flim8-1.fna.fbcdn.net/v/t1.6435-9/231853474_232967888700855_7929659819769629843_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGUYVJ_8n5GHrWQGWZUH_9flVdwIq5DnWyVV3AirkOdbNnuwtWxynpPAILcBKcXkfn3RaSmxtqaEmNi6j6fCqJb&_nc_ohc=vIZ4suB5_38AX-_ePFG&_nc_ht=scontent.flim8-1.fna&oh=4e65ae4af855d03413be49c314867999&oe=616A1988",
+              "welcomeText":"¡Bienvenido(a) a El Mandil Peruano! ¿En qué podemos ayudarte?",
+              "messageText":"",
+              "backgroundColor":"#0a5f54",
+              "ctaText":"Iniciar Chat",
+              "borderRadius":"25",
+              "autoShow":false,
+              "phoneNumber":"51990178050"
+          }
+        };
+            s.onload = function() {
+                CreateWhatsappChatWidget(options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        </script>
 </body>
 
 </html>
